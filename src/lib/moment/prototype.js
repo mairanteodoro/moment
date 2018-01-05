@@ -17,6 +17,7 @@ import { startOf, endOf } from './start-end-of';
 import { valueOf, toDate, toArray, toObject, toJSON, unix } from './to-type';
 import { isValid, parsingFlags, invalidAt } from './valid';
 import { creationData } from './creation-data';
+import { fromJD, toJD } from './juliandate';
 
 proto.add               = add;
 proto.calendar          = calendar;
@@ -56,6 +57,8 @@ proto.toString          = toString;
 proto.unix              = unix;
 proto.valueOf           = valueOf;
 proto.creationData      = creationData;
+proto.fromJD            = fromJD;
+proto.toJD              = toJD;
 
 // Year
 import { getSetYear, getIsLeapYear } from '../units/year';
